@@ -18,7 +18,7 @@
             <div class="nav nav-pills nav-fill">
                 <a class="nav-link navlink" href="home">Home</a>
                 <a class="nav-link navlink" href="team">Team</a>
-                <a class="nav-link navlink" href="#">Contact</a>
+                <a class="nav-link navlink" href="contact">Contact</a>
             </div>
         </div>
     </nav>

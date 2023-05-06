@@ -13,6 +13,10 @@ class RouterMatcher
             return new TeamController();
         }
 
+        if(preg_match('#^\/contact$#', $pathInfo, $matches)) {
+            return new ContatController();
+        }
+
         return new NotFoundController();
     }
 }

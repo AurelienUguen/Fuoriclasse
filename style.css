@@ -48,7 +48,7 @@ h1 {
 
 .titlenotfound {
     margin-top: 300px;
-    margin-bottom: 222px;
+    margin-bottom: 175px;
 }
 
 .titlenotfound h1 {
@@ -354,6 +354,27 @@ p, h3 {
         padding-right: 20px;
     }
 }    
+
+/* CONTACT PAGE */
+
+.contactform {
+    width: 60%;
+    margin-top: 150px;
+    margin-bottom: 90px;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #26A19E !important;
+    border: 0px !important;
+}
+
+@media screen and (max-width: 390px) {
+    .contactform {
+        width: 95%;
+        margin-top: 200px;
+        margin-bottom: 130px;
+    }
+}
 
 /* FOOTER */
 
