@@ -1,12 +1,6 @@
-<?php
-
-require_once 'header.php';
-
-?>
-
 <div class="position-relative headerposition">
     <img src="ressources/Header_Cyclisme.jpg" alt="HeaderCyclisme" class="headerpic img-fluid">
-    <h1 class="position-absolute top-50 start-50 translate-middle display-5 fw-light">Pro Cycling Advanced Statistic</h1>
+    <h1 class="position-absolute top-50 start-50 translate-middle display-5 fw-light responsivetitle">Pro Cycling Advanced Statistic</h1>
 </div>
 
 <section class="grid gap-3 p-2 g-col-6 container container-fluid d-flex justify-content-center align-items-center services">
@@ -65,9 +59,3 @@ require_once 'header.php';
         <iframe width="560" height="315" src="https://www.youtube.com/embed/mwKXqbY9gFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="youtubevideo" allowfullscreen></iframe>
     </div>
 </section>
-
-<?php
-
-require_once 'footer.php';
-
-?>
