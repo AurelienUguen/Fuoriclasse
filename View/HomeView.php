@@ -2,7 +2,7 @@
 
 class HomeView extends LayoutView
 {
-    public function renderBody()
+    public function renderBody(): void
     {
         include 'templates/home.php';
     }

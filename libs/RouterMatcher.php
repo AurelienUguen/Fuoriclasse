@@ -14,7 +14,11 @@ class RouterMatcher
         }
 
         if(preg_match('#^\/contact$#', $pathInfo, $matches)) {
-            return new ContatController();
+            return new ContatcController();
+        }
+
+        if(preg_match('#^\/login$#', $pathInfo, $matches)) {
+            return new LoginController();
         }
 
         return new NotFoundController();

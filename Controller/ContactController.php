@@ -1,8 +1,8 @@
 <?php
 
-class ContatController implements ControllerInterface
+class ContatcController implements ControllerInterface
 {
-    public function __invoke()
+    public function __invoke(): void
     {
         $view = new ContactView();
         $view->render();

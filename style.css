@@ -15,7 +15,7 @@
     height: 100px;
     width: 100%;
     z-index: 99;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
     border-bottom: 1px solid black;
     box-shadow: 0px -3px 10px rgb(0, 0, 0);
 }
@@ -374,6 +374,14 @@ p, h3 {
         margin-top: 200px;
         margin-bottom: 130px;
     }
+}
+
+/* LOGIN PAGE */
+
+.loginform {
+    width: 40%;
+    margin-top: 200px;
+    margin-bottom: 210px;
 }
 
 /* FOOTER */
