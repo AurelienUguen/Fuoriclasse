@@ -12,14 +12,14 @@
 
 <body>
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg">
-            <div class="collapse navbar-collapse justify-content-around align-items-center container-fluid" id="navbarTogglerDemo02">
-            <a href="home"><img src="/ressources/Fuoriclasse_Logo.png" class="img-fluid" alt="Fuoriclasse_Logo.png" width="200px"></a>
-            <div class="nav nav-pills nav-fill">
-                <a class="nav-link navlink" href="home">Home</a>
-                <a class="nav-link navlink" href="team">Team</a>
-                <a class="nav-link navlink" href="contact">Contact</a>
-            </div>
-        </div>
-    </nav>
-</header>
+
+    <?php 
+
+    if(!empty($_SESSION)){
+        include 'menu_authenticated.php';
+    } else {
+        include 'menu_unauthenticated.php';
+    }
+    ?> 
+
+    </header>

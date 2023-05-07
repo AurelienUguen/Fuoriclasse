@@ -1,8 +1,11 @@
 <?php
 
+session_start();
 
 require_once './libs/Database.php';
 require_once './libs/RouterMatcher.php';
+require_once './libs/LogUser.php';
+require_once './libs/Logout.php';
 require_once './Controller/ControllerInterface.php';
 require_once './Controller/HomeController.php';
 require_once './Controller/TeamController.php';
@@ -17,8 +20,8 @@ require_once './View/ContactView.php';
 require_once './View/NotFoundView.php';
 require_once './View/LoginView.php';
 require_once './Model/User.php';
+require_once './Model/CheckLogin.php';
 require_once './Model/UserRepository.php';
 
-session_start();
 
 ?>

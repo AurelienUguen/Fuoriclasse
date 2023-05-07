@@ -21,6 +21,12 @@ class RouterMatcher
             return new LoginController();
         }
 
+        if(preg_match('#^\/logout#', $pathInfo, $matches)) {
+            Logout::logout();
+        }
+
+
+
         return new NotFoundController();
     }
 }

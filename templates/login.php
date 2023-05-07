@@ -1,17 +1,9 @@
-<?php
-
-$user = UserListController::getOneUser();
-
-var_dump($user);
-
-?>
-
 <section>
     <div class="loginform container container-fluid">
         <form method="POST">
         <div class="mb-3">
-            <label for="username" class="form-label">Username : </label>
-            <input type="text" class="form-control" id="username" name="username" required>
+            <label for="email" class="form-label">Username : </label>
+            <input type="email" class="form-control" id="email" name="email" required>
         </div>
         <div class="mb-3">
             <label for="message" class="form-label">Password : </label>
