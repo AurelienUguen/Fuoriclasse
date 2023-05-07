@@ -15,11 +15,16 @@
 
     <?php 
 
-    if(!empty($_SESSION)){
-        include 'menu_authenticated.php';
+
+
+    if (!empty($_SESSION) && $_SESSION['role'] === 'admin') {
+        include 'menuAdmin.php';
+    } elseif (!empty($_SESSION) && $_SESSION['role'] === 'client') {
+        include 'menuClient.php';
     } else {
-        include 'menu_unauthenticated.php';
+        include 'menuAnonymous.php';
     }
+
     ?> 
 
     </header>

@@ -50,12 +50,12 @@ h1 {
     padding: 70px;
 }
 
-.titlenotfound {
+.titlenotfound, .workinprogress {
     margin-top: 300px;
     margin-bottom: 175px;
 }
 
-.titlenotfound h1 {
+.titlenotfound h1, .workinprogress h1 {
     color: black;
     background-color: white;
     padding: 0;
@@ -384,8 +384,8 @@ p, h3 {
 
 .loginform {
     width: 40%;
-    margin-top: 200px;
-    margin-bottom: 210px;
+    margin-top: 245px;
+    margin-bottom: 220px;
 }
 
 /* FOOTER */

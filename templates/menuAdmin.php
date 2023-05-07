@@ -5,6 +5,7 @@
             <a class="nav-link navlink" href="home">Home</a>
             <a class="nav-link navlink" href="team">Team</a>
             <a class="nav-link navlink" href="contact">Contact</a>
+            <a class="nav-link navlink" href="admin">Admin</a>
             <a class="nav-link navlink" href="logout" onclick="return confirm('Are you sure ?');"><img src="./../ressources/Fuoriclasse_Logout.png" alt="logout" width="20px" class="logout img-fluid"></a>
         </div>
     </div>

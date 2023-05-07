@@ -25,6 +25,18 @@ class RouterMatcher
             Logout::logout();
         }
 
+        if(preg_match('#^\/admin$#', $pathInfo, $matches) && $_SESSION['role'] === 'admin') {
+            return new AdminController();
+        } else {
+            header('location: home');
+        }
+
+        if(preg_match('#^\/myspace#', $pathInfo, $matches) && $_SESSION['role'] === 'client') {
+           return new MySpaceController();
+        } else {
+            header('location: home');
+        }
+
 
 
         return new NotFoundController();
