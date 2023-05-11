@@ -24,8 +24,13 @@ require_once './View/LoginView.php';
 require_once './View/AdminView.php';
 require_once './View/MySpaceView.php';
 require_once './Model/User.php';
-require_once './Model/CheckLogin.php';
 require_once './Model/UserRepository.php';
+require_once './Model/CheckLogin.php';
+/* require_once './Model/Team.php';
+require_once './Model/TeamRepository.php';
+require_once './Model/Rider.php';
+require_once './Model/RiderRepository.php';
 
+ */
 
 ?>
