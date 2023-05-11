@@ -1,10 +1,33 @@
 <?php
 
-class UserRepository
+class UserRepository extends ParentRepository
 {
-    public static function findAll(): array
+    private RoleRepository $roleRepository;
+
+    public function __construct($pdo)
     {
-        return Database::getInstance()
-            ->select('SELECT * FROM user', User::class);
+        parent::__construct($pdo, DB_TABLE_USER, User::class);
+
+        $this->roleRepository = new RoleRepository($pdo);
+    }
+
+    public function getUsers(array $filters = [])
+    {
+        $userSql = 'SELECT * FROM ' . DB_TABLE_USER . ' u ';
+        $userStmt = $this->pdo->prepare($userSql);
+
+        $userStmt->execute();
+        $userStmt->setFetchMode(PDO::FETCH_CLASS, User::class);
+
+        $users = $userStmt->fetchAll();
+
+        foreach ($users as $user) {
+            $role = $this->roleRepository->getRoleById($user->getRoleId());
+
+
+            $user->setRole($role);
+        }
+
+        return $users;
     }
 }

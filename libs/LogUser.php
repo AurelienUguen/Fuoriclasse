@@ -1,10 +1,10 @@
 <?php
 
-class LogUser
+/* class LogUser
 {
     public static function logUser()
     {
-        $users = UserRepository::findAll();
+        // $users = UserRepository::getUsers();
 
         if (!empty($_POST)) {
             foreach ($users as $user) {
@@ -24,7 +24,7 @@ class LogUser
         }
     }
             
-}    
+}   */  
     
 
 

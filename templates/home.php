@@ -59,3 +59,10 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/mwKXqbY9gFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="youtubevideo" allowfullscreen></iframe>
     </div>
 </section>
+
+<?php
+
+$users = UserController::getUserList($users);
+var_dump(($users));
+
+?>
