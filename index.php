@@ -3,7 +3,7 @@
 
 require_once 'libs/autoload.php';
 
-// LogUser::logUser();
+LogUser::logUser();
 
 // var_dump($_SESSION);
 

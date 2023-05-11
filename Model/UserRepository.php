@@ -11,7 +11,7 @@ class UserRepository extends ParentRepository
         $this->roleRepository = new RoleRepository($pdo);
     }
 
-    public function getUsers(array $filters = [])
+    public function getUsers()
     {
         $userSql = 'SELECT * FROM ' . DB_TABLE_USER . ' u ';
         $userStmt = $this->pdo->prepare($userSql);
@@ -23,7 +23,6 @@ class UserRepository extends ParentRepository
 
         foreach ($users as $user) {
             $role = $this->roleRepository->getRoleById($user->getRoleId());
-
 
             $user->setRole($role);
         }

@@ -8,7 +8,7 @@ class Database
 
     private PDO $pdo;
 
-    private function __construct()
+    public function __construct()
     {
         $this->pdo = new PDO(DSN, USER, PASS);
     }
@@ -20,13 +20,5 @@ class Database
         }
 
         return self::$instance = new self();
-    }
-
-    public function select(string $sql, string $className): array
-    {
-        $sth = $this->pdo->prepare($sql);
-        $sth->execute();
-
-        return $sth->fetchAll(PDO::FETCH_CLASS, $className);
     }
 }

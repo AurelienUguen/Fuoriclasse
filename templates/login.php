@@ -13,3 +13,8 @@
         </form>
     </div>
 </section>
+
+<?php
+
+/* $users = LogUser::logUser();
+var_dump($users); */

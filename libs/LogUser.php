@@ -1,11 +1,11 @@
 <?php
 
-/* class LogUser
+class LogUser
 {
+
+
     public static function logUser()
     {
-        // $users = UserRepository::getUsers();
-
         if (!empty($_POST)) {
             foreach ($users as $user) {
                 if  ($_POST['email'] === $user->email && $_POST['password'] === $user->password) {
@@ -23,10 +23,5 @@
             } 
         }
     }
-            
-}   */  
-    
-
-
-
-?>
+         
+} 

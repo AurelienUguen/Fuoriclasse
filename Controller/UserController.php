@@ -14,6 +14,4 @@ class UserController
        $users = $this->userRepository->getUsers();
 
     }
-
-   
 }
