@@ -118,6 +118,16 @@ h1 {
     }
 }
 
+@media screen and (max-width: 290px) {
+    h1 {
+        padding: 2px;
+    }
+
+    .responsivetitle {
+        font-size: 18px;
+    }
+}
+
 p, h3 {
     text-align: justify;
 }
@@ -315,6 +325,17 @@ p, h3 {
     .video {
         width: 320px;
         height: 197px;
+    }
+
+    .gcn h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .video {
+        width: 260px;
+        height: 137px;
     }
 }
 
