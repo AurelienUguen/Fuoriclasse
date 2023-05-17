@@ -321,6 +321,13 @@ p, h3 {
     }
 }
 
+@media screen and (max-width: 414px) {
+    .video {
+        width: 370px;
+        height: 200px;
+    }
+}
+
 @media screen and (max-width: 390px) {
     .video {
         width: 320px;
