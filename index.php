@@ -3,9 +3,10 @@
 
 require_once 'libs/autoload.php';
 
-LogUser::logUser();
 
-// var_dump($_SESSION);
+if (empty($_SERVER['PATH_INFO'])) {
+    header('location: home');
+}
 
 RouterMatcher::match($_SERVER['PATH_INFO'])();
 
